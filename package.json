@@ -1,0 +1,37 @@
+{
+  "name": "natural-interface",
+  "version": "0.1.0-alpha",
+  "description": "Natural interface enhancement for testing purpose",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest --config=jest.config.json",
+    "test:watch": "npm test -- --watch",
+    "prettify": "prettier --write 'src/**/*.ts'",
+    "build": "rm -rf lib && mkdir lib && tsc -p tsconfig.build.json",
+    "test:pack": "npm run build && npm pack",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathieueveillard/natural-interface.git"
+  },
+  "keywords": [
+    "natural",
+    "interface",
+    "testing",
+    "assertion"
+  ],
+  "author": "Mathieu Eveillard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathieueveillard/natural-interface/issues"
+  },
+  "homepage": "https://github.com/mathieueveillard/natural-interface#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  }
+}
