@@ -57,4 +57,4 @@ it("should make assertions on booleans", () => {
 
 ```
 
-This, of course, if a contrived example. Making assertions on booleans whithout business context is not a real world scenario.
+This, of course, if a contrived example. Making assertions on booleans without business context is not a real world scenario.
